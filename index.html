@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="fr"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Mon Portfolio</title> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet"> 
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }body {
+        background: gray;
+        color: #f1f5f9;
+        line-height: 1.6;
+    }
+
+    header {
+        background: #1e293b;
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    header h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #38bdf8;
+    }
+
+    nav a {
+        color: #f1f5f9;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #38bdf8;
+    }
+     
+     img{
+         width:100px;
+         border-rodius:50%;
+         float:center;
+         margin-right:30px;
+         margin:0px;
+         display :flex;
+     }
+
+    section {
+        padding: 80px 10%;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 90vh;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .hero span {
+        color: #38bdf8;
+    }
+
+    .hero p {
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background: #38bdf8;
+        color: #0f172a;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #0ea5e9;
+    }
+
+    .about, .contact {
+        background: #1e293b;
+        border-radius: 12px;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .project-card {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+        margin-bottom: 10px;
+        color: #38bdf8;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #0f172a;
+        border-top: 1px solid #1e293b;
+        margin-top: 40px;
+    }
+
+    @media(max-width: 768px) {
+        .hero h2 {
+            font-size: 32px;
+        }
+
+        header {
+            flex-direction: column;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+        #ima{
+            width=170px;
+            style="border_radius:30%;margin_top:45px;padding:4px;"
+    }
+</style> 
+ </head> 
+ <body> 
+  <header> 
+   <h1>MonPortfolio</h1> 
+   <nav> <a href="#home">Accueil</a> <a href="#about">À propos</a> <a href="#projects">Projets</a> <a href="#contact">Contact</a> 
+   </nav> 
+  </header> 
+  <section class="hero" id="home"> 
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br> 
+      <div id="image" >
+    <img src="julien.jpg" alt="image" style="width:200px; height=150px; margin-top:200px; border-radius:50%; object-fit:cover;">
+   <h2>Bonjour, je suis <span>RANDRIANANTENAINA julien étudiant dans l'emit fianarantsoa, niveau de licence avec de mention informatique</span> 
+   <p>Développeur web passionné, spécialisé en création de sites modernes, rapides et responsives.</p> <a href="#projects" class="btn">Voir mes projets</a> 
+  </h2></section> 
+  <section class="about" id="about"> 
+   <h2>À propos de moi</h2> 
+  </section> 
+  <section id="projects"> 
+   <h2>Mes Projets</h2> 
+   <div class="projects-grid"> 
+    <div class="project-card"> 
+     <h3>Projet 1</h3> 
+     <p>Description courte du projet avec les technologies utilisées.</p> 
+    </div> 
+    <div class="project-card"> 
+     <h3>Projet 2</h3> 
+     <p>Description courte du projet avec les technologies utilisées.</p> 
+    </div> 
+    <div class="project-card"> 
+     <h3>Projet 3</h3> 
+     <p>Description courte du projet avec les technologies utilisées.</p> 
+    </div> 
+   </div> 
+  </section> 
+  <section class="contact" id="contact"> 
+   <h2>Contact</h2> 
+   <p>Email : julienrandrianantenaina06@gmail.com</p> 
+   <p>Num tél : 0381758571</p> 
+  </section> 
+  <footer> 
+   <p>© 2026 Votre Nom - Tous droits réservés</p> 
+  </footer> 
+ 
+</body></html>
